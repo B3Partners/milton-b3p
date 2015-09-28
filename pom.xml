@@ -43,7 +43,7 @@
         <connection>scm:git:git@github.com:B3Partners/milton-b3p.git</connection>
         <developerConnection>scm:git:git@github.com:B3Partners/milton-b3p.git</developerConnection>
         <url>https://github.com/B3Partners/milton-b3p</url>
-      <tag>milton-b3p-4.2.1</tag>
+      <tag>milton-b3p-${project.version}</tag>
     </scm>
     <distributionManagement>
         <repository>
