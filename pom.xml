@@ -30,6 +30,7 @@
             <groupId>javax.servlet</groupId>
             <artifactId>servlet-api</artifactId>
             <version>2.5</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
     <repositories>
@@ -43,24 +44,25 @@
         <connection>scm:git:git@github.com:B3Partners/milton-b3p.git</connection>
         <developerConnection>scm:git:git@github.com:B3Partners/milton-b3p.git</developerConnection>
         <url>https://github.com/B3Partners/milton-b3p</url>
-      <tag>milton-b3p-${project.version}</tag>
+        <tag>milton-b3p-${project.version}</tag>
     </scm>
     <distributionManagement>
         <repository>
             <id>repo.b3p.nl</id>
-            <name>B3P file Repository</name>
-            <url>http://repo.b3p.nl/nexus/content/repositories/releases/</url>
+            <name>B3P releases Repository</name>
+            <url>https://repo.b3p.nl/nexus/repository/releases/</url>
         </repository>
+        <snapshotRepository>
+            <id>repo.b3p.nl</id>
+            <name>B3P Snapshots Repository</name>
+            <url>https://repo.b3p.nl/nexus/repository/snapshots/</url>
+        </snapshotRepository>
     </distributionManagement>
     <build>        
         <plugins>            
             <plugin>                
-                <groupId>org.apache.maven.plugins</groupId>                
-                <artifactId>maven-release-plugin</artifactId>                
+                <artifactId>maven-release-plugin</artifactId>
                 <version>2.5.3</version>                
-                <configuration>                    
-                    <pushChanges>true</pushChanges>                
-                </configuration>            
             </plugin>
         </plugins>
     </build>
