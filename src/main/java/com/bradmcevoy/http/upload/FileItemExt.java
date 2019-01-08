@@ -7,12 +7,15 @@ import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
 import javax.activation.DataSource;
 import org.apache.commons.fileupload.FileItem;
+import org.apache.commons.fileupload.FileItemHeaders;
 
 public class FileItemExt implements DataSource, FileItem {
     
     private static final long serialVersionUID = 1L;
     
     private final FileItem item;
+
+    private FileItemHeaders fileItemHeaders;
     
     public FileItemExt(FileItem item) {
         this.item = item;
@@ -77,5 +80,12 @@ public class FileItemExt implements DataSource, FileItem {
     public void setFormField(boolean b) {
         item.setFormField(b);
     }
-    
+
+    public FileItemHeaders getHeaders() {
+        return this.fileItemHeaders;
+    }
+
+    public void setHeaders(FileItemHeaders fileItemHeaders) {
+        this.fileItemHeaders = fileItemHeaders;
+    }
 }
