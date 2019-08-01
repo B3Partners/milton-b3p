@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>nl.b3p</groupId>
     <artifactId>milton-b3p</artifactId>
-    <version>4.2.3-SNAPSHOT</version>
+    <version>4.2.3</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -44,7 +44,7 @@
         <connection>scm:git:git@github.com:B3Partners/milton-b3p.git</connection>
         <developerConnection>scm:git:git@github.com:B3Partners/milton-b3p.git</developerConnection>
         <url>https://github.com/B3Partners/milton-b3p</url>
-      <tag>HEAD</tag>
+      <tag>milton-b3p-4.2.3</tag>
   </scm>
     <distributionManagement>
         <repository>
